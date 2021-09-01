@@ -1,2 +1,2 @@
 # NotDevsWebsite
-Work in progress
+Firefox addon. Work in progress
