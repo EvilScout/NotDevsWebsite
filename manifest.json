@@ -1,0 +1,33 @@
+{
+
+
+  "manifest_version": 2,
+  "name": "NotDevsWebsite",
+  "version": "0.1",
+  "description": "Redirect from scam or appstore like websites to official developer's websites. Helpful for Windows users.",
+  "icons": {
+    "48": "icons/favicon-48.png",
+    "96": "icons/favicon-96.png"
+  },
+
+
+  "applications": {
+    "gecko": {
+      "id": "notdevswebsit@github.com",
+      "strict_min_version": "48.0"
+    }
+  },
+
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_start",
+      "js": ["sitecheck.js"]
+    }
+  ],
+
+
+  "permissions": ["tabs"]
+
+}
